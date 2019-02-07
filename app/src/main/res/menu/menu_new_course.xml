@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.NewCourseActivity">
+
+    <item
+        android:id="@+id/done_newcourse"
+        android:orderInCategory="200"
+        android:title="Search"
+        android:icon="@drawable/ic_done_white_64dp_1x"
+        app:showAsAction="ifRoom"
+        ></item>
+
+
+</menu>

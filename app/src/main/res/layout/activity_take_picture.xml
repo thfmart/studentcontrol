@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:TutorialCamera="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.recognition.TutorialCamera
+        android:id="@+id/tutorialCamera"
+        TutorialCamera:show_fps="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/frameLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/takeView"
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/frameLayout2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue"
+            android:id="@+id/imageButton"
+            android:layout_alignTop="@+id/frameLayout"
+            android:layout_alignParentEnd="true" />
+
+
+    </FrameLayout>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:id="@+id/changeCamera"
+        android:background="@drawable/rotate"
+        android:layout_alignBottom="@+id/frameLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/frameLayout"
+        android:layout_alignStart="@+id/frameLayout2" />
+
+
+</RelativeLayout>

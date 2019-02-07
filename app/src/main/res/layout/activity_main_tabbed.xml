@@ -1,0 +1,50 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f4f5"
+    tools:context="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.MainTabbedActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    <include layout="@layout/toolbar"
+        ></include>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.TabLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/blue"
+        android:elevation="6dp"
+        app:tabIndicatorColor="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme2"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:theme="@style/AppTheme2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_layout"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add_white_24dp" />
+
+
+</LinearLayout>

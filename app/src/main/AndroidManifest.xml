@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".teste" />
+        <activity
+            android:name=".Tabbed"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.CourseListActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_course_list"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.NewCourseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.FinalActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_final"
+            android:theme="@style/AppTheme" />
+        <activity android:name="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.SelectPeopleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.MainTabbedActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.CadastroActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.ChamadaActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.TakePictureActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="br.usp.eesc.sel.thiagofmartins.tcc.recogattendance.view.LoginActivity"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

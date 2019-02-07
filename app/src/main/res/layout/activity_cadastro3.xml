@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/eesc"
+    tools:context=".CadastroActivity"
+    android:id="@+id/r1"
+    android:orientation="vertical"
+
+    android:weightSum="6"
+    android:clickable="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        >
+    <TableLayout
+        android:layout_width="match_parent"
+       android:layout_height="290dp"
+        android:weightSum="3"
+        android:id="@+id/tableLayout">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1">
+
+    <ImageButton
+        android:background="@drawable/buttonstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/button1"
+        android:gravity="center" />
+
+    <ImageButton
+        android:background="@drawable/buttonstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/button2" />
+
+    <ImageButton
+        android:background="@drawable/buttonstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/button3"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1">
+
+    <ImageButton
+        android:background="@drawable/buttonstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/button4" />
+
+    <ImageButton
+        android:background="@drawable/buttonstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/button5"
+        />
+
+    <ImageButton
+        android:background="@drawable/buttonstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/button6"
+         />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1">
+    <ImageButton
+        android:background="@drawable/buttonstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/button7"
+         />
+
+    <ImageButton
+        android:background="@drawable/buttonstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/button8"
+         />
+
+    <ImageButton
+        android:background="@drawable/buttonstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/button9" />
+    </TableRow>
+    </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:weightSum="2">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+
+                    >
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/namee"
+                        android:hint="Nome"
+                        android:singleLine="true"
+
+
+
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:editable="false" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/nUSP"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:id="@+id/nUSP1"
+                            android:hint="N USP"
+                            android:singleLine="true"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            >
+        <Button
+            android:background="@drawable/okay2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button10"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            />
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
