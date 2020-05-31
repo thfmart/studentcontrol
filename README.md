@@ -31,7 +31,7 @@ Please check the complete project (in Portuguese) where it is explained all the 
 
 ### Example of use
 
-<img src="resources/App-Image.jpg">
+<img src="Resources/App-Image.jpg">
 
 ## Results
 We tested the project with the [Essex Faces 94 database](https://cswww.essex.ac.uk/mv/allfaces/faces94.html), a database with 20 images from 153 subjects,
